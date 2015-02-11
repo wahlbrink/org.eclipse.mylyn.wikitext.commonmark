@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="wikitext" sequenceNumber="2">
+<locations>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.junit" version="4.11.0.v201303080030"/>
+<unit id="com.google.guava" version="15.0.0.v201403281430"/>
+<unit id="org.mockito.source" version="1.9.5.v201311280930"/>
+<unit id="com.google.guava.source" version="15.0.0.v201403281430"/>
+<unit id="org.junit.source" version="4.11.0.v201303080030"/>
+<unit id="org.mockito" version="1.9.5.v201311280930"/>
+<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.jsoup.source" version="1.7.2.v201304221138"/>
+<unit id="org.jsoup" version="1.7.2.v201304221138"/>
+<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20130517111416/repository/"/>
+</location>
+</locations>
+</target>
