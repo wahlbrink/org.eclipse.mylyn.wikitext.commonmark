@@ -29,7 +29,7 @@ public class SetextHeaderBlock extends SourceBlock {
 
 	private final Pattern indentPattern = Pattern.compile("\\ {0,3}\\S.*");
 
-	private final Pattern setextUnderlinePattern = Pattern.compile("\\ {0,3}((-|=)+)\\s*");
+	private final Pattern setextUnderlinePattern = Pattern.compile("\\ {0,3}(=+|-+)\\s*");
 
 	@Override
 	public void process(ProcessingContext context, DocumentBuilder builder, LineSequence lineSequence) {
