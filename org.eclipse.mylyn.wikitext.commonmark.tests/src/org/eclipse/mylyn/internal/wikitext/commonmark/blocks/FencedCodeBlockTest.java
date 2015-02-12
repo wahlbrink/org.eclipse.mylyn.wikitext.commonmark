@@ -29,14 +29,12 @@ public class FencedCodeBlockTest {
 		assertCanStart("  ```");
 		assertCanStart("   ```");
 		assertCanStart("````````````````");
-		assertCanStart("    ```");
-		assertCanStartFalse("     ```");
+		assertCanStartFalse("    ```");
 		assertCanStart("~~~");
 		assertCanStart(" ~~~");
 		assertCanStart("  ~~~");
 		assertCanStart("   ~~~");
-		assertCanStart("    ~~~");
-		assertCanStartFalse("     ~~~");
+		assertCanStartFalse("    ~~~");
 		assertCanStart("~~~~~~~~~~~~~~~~~");
 		assertCanStartFalse("``` one ``");
 	}
@@ -56,8 +54,7 @@ public class FencedCodeBlockTest {
 
 	@Test
 	public void encodedCharacters() {
-		assertContent("<pre><code>&lt;\n &gt;\n</code></pre>",
-				"```\n<\n >\n```");
+		assertContent("<pre><code>&lt;\n &gt;\n</code></pre>", "```\n<\n >\n```");
 	}
 
 	private void assertCanStartFalse(String content) {

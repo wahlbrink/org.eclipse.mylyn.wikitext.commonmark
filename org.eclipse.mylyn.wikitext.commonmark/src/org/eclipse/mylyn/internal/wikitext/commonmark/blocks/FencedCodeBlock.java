@@ -29,7 +29,7 @@ import com.google.common.base.Predicates;
 
 public class FencedCodeBlock extends SourceBlock {
 
-	private final Pattern openingFencePattern = Pattern.compile("(\\ {0,4})(`{3,}|~{3,})\\s*(?:([^\\s~`]+)[^~`]*)?");
+	private final Pattern openingFencePattern = Pattern.compile("(\\ {0,3})(`{3,}|~{3,})\\s*(?:([^\\s~`]+)[^~`]*)?");
 
 	@Override
 	public void process(ProcessingContext context, DocumentBuilder builder, LineSequence lineSequence) {
