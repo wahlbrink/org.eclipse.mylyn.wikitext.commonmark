@@ -27,7 +27,7 @@ import org.eclipse.mylyn.wikitext.core.parser.HeadingAttributes;
 
 public class AtxHeaderBlock extends SourceBlock {
 
-	private final Pattern pattern = Pattern.compile("\\s{0,3}(#{1,6})(?:\\s+([^#\\s].*?))?(\\s+#*)?\\s*");
+	private final Pattern pattern = Pattern.compile("\\ {0,3}(#{1,6})(?:\\s+([^#\\s].*?))?(\\s+#*)?\\s*");
 
 	@Override
 	public void process(ProcessingContext context, DocumentBuilder builder, LineSequence lineSequence) {

@@ -21,7 +21,7 @@ import org.eclipse.mylyn.wikitext.core.parser.DocumentBuilder;
 
 public class ListBlock extends SourceBlock {
 
-	private final Pattern bulletPattern = Pattern.compile("\\s{0,3}[*+-](\\s+.*|\\s*$)");
+	private final Pattern bulletPattern = Pattern.compile("\\ {0,3}[*+-](\\s+.*|\\s*$)");
 
 	@Override
 	public void process(ProcessingContext context, DocumentBuilder builder, LineSequence lineSequence) {

@@ -29,7 +29,7 @@ import com.google.common.base.Predicates;
 
 public class FencedCodeBlock extends SourceBlock {
 
-	private final Pattern openingFencePattern = Pattern.compile("(\\s{0,4})(`{3,}|~{3,})\\s*(?:([^\\s~`]+)[^~`]*)?");
+	private final Pattern openingFencePattern = Pattern.compile("(\\ {0,4})(`{3,}|~{3,})\\s*(?:([^\\s~`]+)[^~`]*)?");
 
 	@Override
 	public void process(ProcessingContext context, DocumentBuilder builder, LineSequence lineSequence) {
@@ -69,7 +69,7 @@ public class FencedCodeBlock extends SourceBlock {
 
 	private String removeIndent(String indent, String text) {
 		if (indent != null && indent.length() > 0) {
-			Pattern indentPattern = Pattern.compile("\\s{1," + indent.length() + "}(.*)");
+			Pattern indentPattern = Pattern.compile("\\ {1," + indent.length() + "}(.*)");
 			Matcher matcher = indentPattern.matcher(text);
 			if (matcher.matches()) {
 				return matcher.group(1);
@@ -81,7 +81,7 @@ public class FencedCodeBlock extends SourceBlock {
 	private Pattern closingFencePattern(Matcher matcher) {
 		String fence = matcher.group(2);
 		char fenceDelimiter = fence.charAt(0);
-		return Pattern.compile("\\s{0,3}" + fenceDelimiter + "{" + fence.length() + ",}\\s*");
+		return Pattern.compile("\\ {0,3}" + fenceDelimiter + "{" + fence.length() + ",}\\s*");
 	}
 
 	private void addInfoTextCssClass(Attributes codeAttributes, Matcher matcher) {

@@ -21,7 +21,7 @@ import org.eclipse.mylyn.wikitext.core.parser.DocumentBuilder;
 
 public class HorizontalRuleBlock extends SourceBlock {
 
-	private final Pattern startPattern = Pattern.compile("\\s{0,3}((_\\s*){3,}|(-\\s*){3,}|(\\*\\s*){3,})");
+	private final Pattern startPattern = Pattern.compile("\\ {0,3}((_\\s*){3,}|(-\\s*){3,}|(\\*\\s*){3,})");
 
 	@Override
 	public void process(ProcessingContext context, DocumentBuilder builder, LineSequence lineSequence) {

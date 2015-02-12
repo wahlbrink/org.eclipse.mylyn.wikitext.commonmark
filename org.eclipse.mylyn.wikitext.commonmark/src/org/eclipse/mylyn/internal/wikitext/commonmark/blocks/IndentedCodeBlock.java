@@ -30,7 +30,7 @@ import com.google.common.base.Predicates;
 
 public class IndentedCodeBlock extends SourceBlock {
 
-	private final Pattern linePattern = Pattern.compile("(?:\\s{0,2}\t|(\\s{4}))(.*)");
+	private final Pattern linePattern = Pattern.compile("(?:\\ {0,3}\\t|(\\ {4}))(.*)");
 
 	@Override
 	public void process(ProcessingContext context, DocumentBuilder builder, LineSequence lineSequence) {

@@ -29,7 +29,7 @@ import com.google.common.base.Optional;
 
 public class HtmlBlock extends SourceBlock {
 
-	private final Pattern startPattern = Pattern.compile("\\s{0,3}(<).*");
+	private final Pattern startPattern = Pattern.compile("\\ {0,3}(<).*");
 
 	@Override
 	public void process(ProcessingContext context, DocumentBuilder builder, LineSequence lineSequence) {
